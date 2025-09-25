@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 
-import MainVideo from "../assets/Walking Girl.mp4";
+import MainVideo from "../assets/banner.mp4";
 
 const VideoContainer = styled.section`
   width: 100%;
@@ -108,7 +108,7 @@ const CoverVideo = () => {
             data-scroll-delay="0.13"
             data-scroll-speed="4"
           >
-            W
+            +
           </motion.h1>
           <motion.h1
             variants={item}
@@ -116,7 +116,7 @@ const CoverVideo = () => {
             data-scroll-delay="0.09"
             data-scroll-speed="4"
           >
-            i
+            2
           </motion.h1>
           <motion.h1
             variants={item}
@@ -124,7 +124,7 @@ const CoverVideo = () => {
             data-scroll-delay="0.06"
             data-scroll-speed="4"
           >
-            b
+            4
           </motion.h1>
           <motion.h1
             variants={item}
@@ -132,7 +132,7 @@ const CoverVideo = () => {
             data-scroll-delay="0.04"
             data-scroll-speed="4"
           >
-            e
+            4
           </motion.h1>
         </div>
         <motion.h2
@@ -142,7 +142,7 @@ const CoverVideo = () => {
           data-scroll-delay="0.04"
           data-scroll-speed="2"
         >
-          inspire. create. belive
+          inspire. crie. acredite
         </motion.h2>
       </Title>
 

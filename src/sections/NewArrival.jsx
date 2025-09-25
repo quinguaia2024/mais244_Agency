@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import React, {  useLayoutEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import styled from 'styled-components';
 
-import img1 from '../assets/Images/11.webp';
-import img2 from '../assets/Images/12.webp';
-import img3 from '../assets/Images/13.webp';
-import img4 from '../assets/Images/14.webp';
+import img1 from '../assets/Images/13.jpg';
+import img2 from '../assets/Images/15.png';
+import img3 from '../assets/Images/12.jpg';
+import img4 from '../assets/Images/14.jpg';
 
 const Section = styled.section`
   min-height: 100vh;
@@ -19,6 +19,7 @@ const Section = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding:0px;
 
   position: relative;
   /* background-color: ${(props) => props.theme.text}; */
@@ -134,7 +135,11 @@ const Item = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0;
+  margin: 3rem 0;
+   &:last-child {
+    margin-bottom: 0; // Remove margem do último item 
+  }
+      
 
   h2 {
   }
@@ -144,6 +149,7 @@ const Item = styled.div`
     height: auto;
     z-index: 5;
   }
+    
 `;
 const Photos = ({ img, name }) => {
   return (
@@ -155,7 +161,7 @@ const Photos = ({ img, name }) => {
 };
 
 const NewArrival = () => {
-   gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
   const ref = useRef(null);
 
   const ScrollingRef = useRef(null);
@@ -165,15 +171,15 @@ const NewArrival = () => {
     let element = ref.current;
 
     let scrollingElement = ScrollingRef.current;
-let t1= gsap.timeline();
+    let t1 = gsap.timeline();
     setTimeout(() => {
       let mainHeight = scrollingElement.scrollHeight;
-      element.style.height = `calc(${mainHeight / 4}px)`;
+      element.style.height = `calc(${mainHeight / 4}px - 100px)`;
       t1.to(element, {
         scrollTrigger: {
           trigger: element,
           start: 'top top',
-          end: 'bottom+=100% top-=100%',
+          end: 'bottom+=50% top-=50%',
           scroller: '.App', //locomotive-scroll
           scrub: 1,
           pin: true,
@@ -212,34 +218,32 @@ let t1= gsap.timeline();
   }, []);
 
   return (
-    <Section  ref={ref} id="fixed-target" className="new-arrival">
+    <Section ref={ref} id="fixed-target" className="new-arrival">
       <Overlay />
 
       <Title
         data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal"
       >
-        New Arrivals
+        Portofólio
       </Title>
 
       <Container ref={ScrollingRef}>
-        <Photos img={img1} name="Denim" />
-        <Photos img={img2} name="Cool Dresses" />
-        <Photos img={img3} name="Jackets" />
-        <Photos img={img4} name="T-shirts" />
+        <Photos img={img1} name="Eventos que Marcam" />
+        <Photos img={img2} name="Marcas que Inspiram" />
+        <Photos img={img3} name="Projetos que Conectam" />
+        <Photos img={img4} name="Experiências que Transformam" />
       </Container>
 
       <Text data-scroll data-scroll-speed="-4">
-        There is new collection available for cool clothes in all sizes. This collection
-        is a great way to find a new look for you. It offers a variety of cool apparel
-        styles to fit your taste, while you can also find some cool clothes that you can
-        wear everyday.
+        De eventos que marcam à gestão que transforma, mostramos no nosso portfólio a energia que colocamos em cada projeto.
+        Curte, inspira-te e imagina o que podemos criar juntos!
         <br />
         <br />
-        The first line of clothing you will see on this collection is for men. The
-        collection also includes three new styles for women.
+        A estratégia é a nossa armadura
+        Para sobreviver ao ruído do dia a dia.
+        Uma marca nunca está "over" ou "under" exposta,
+        Está é no radar certo.
         <br />
-        <br />
-        Give it a try and experience a new look.
       </Text>
     </Section>
   );

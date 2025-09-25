@@ -59,7 +59,7 @@ const Banner = styled.h1`
 
   span {
     display: block;
-    background-color: ${(props) => props.theme.body};
+    background-color: #025E73;
 
     padding: 1rem 2rem;
     
@@ -77,7 +77,7 @@ const Marquee = () => {
             data-scroll-speed="8"
             data-scroll-target="#direction"
           >
-            Fashon is an armour
+            Para vencer todos os dias
           </span>
         </Banner>
         <Banner data-scroll data-scroll-speed="-2" data-scroll-target="#direction">
@@ -87,7 +87,7 @@ const Marquee = () => {
             data-scroll-speed="-6"
             data-scroll-target="#direction"
           >
-            To survive everyday life
+          no mercado
           </span>
         </Banner>
         <Banner>
@@ -97,7 +97,7 @@ const Marquee = () => {
             data-scroll-speed="6"
             data-scroll-target="#direction"
           >
-            One is never over-dressed or
+          Uma marca nunca está 
           </span>
         </Banner>
         <Banner>
@@ -107,7 +107,7 @@ const Marquee = () => {
             data-scroll-speed="-4"
             data-scroll-target="#direction"
           >
-            under-dressed
+            “demais” nem “de menos”,
           </span>
         </Banner>
         <Banner data-scroll data-scroll-speed="6" data-scroll-target="#direction">
@@ -117,7 +117,7 @@ const Marquee = () => {
             data-scroll-speed="6"
             data-scroll-target="#direction"
           >
-            with a Little Black Dress.
+           quando tem +244 ao lado.
           </span>
         </Banner>
       </Container>

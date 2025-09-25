@@ -39,7 +39,7 @@ overflow: hidden;
     stroke-linecap: round;
     g {
       path {
-        stroke: #fff;
+        stroke: #025E73;
       }
     }
   }
@@ -114,7 +114,7 @@ const Loader = () => {
         </g>
       </svg>
       <Text variants={textVariants} initial="hidden" animate="visible">
-        Wibe Studio
+        Evision Holding
       </Text>
     </Container>
   );

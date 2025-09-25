@@ -4,16 +4,16 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useLayoutEffect, useRef } from "react";
 import styled from "styled-components";
 
-import img1 from "../assets/Images/1.webp";
-import img2 from "../assets/Images/2.webp";
-import img3 from "../assets/Images/3.webp";
-import img4 from "../assets/Images/4.webp";
-import img5 from "../assets/Images/5.webp";
-import img6 from "../assets/Images/6.webp";
-import img7 from "../assets/Images/7.webp";
-import img8 from "../assets/Images/8.webp";
-import img9 from "../assets/Images/9.webp";
-import img10 from "../assets/Images/10.webp";
+import img1 from "../assets/Images/1.jpg";
+import img2 from "../assets/Images/2.jpg";
+import img3 from "../assets/Images/3.jpg";
+import img4 from "../assets/Images/4.jpg";
+import img5 from "../assets/Images/5.jpg";
+import img6 from "../assets/Images/6.jpg";
+import img7 from "../assets/Images/7.jpg";
+import img8 from "../assets/Images/8.jpg";
+import img9 from "../assets/Images/9.jpg";
+import img10 from "../assets/Images/10.jpg";
 
 const Section = styled(motion.section)`
   min-height: 100vh;
@@ -28,7 +28,7 @@ const Section = styled(motion.section)`
 
   position: relative;
 
-  /* background-color: orange; */
+background-color: #D9D9D9;
 `;
 
 const Title = styled.h1`
@@ -54,7 +54,7 @@ const Title = styled.h1`
 
 const Left = styled.div`
   width: 35%;
-  background-color: ${(props) => props.theme.body};
+  background-color: #025E73;
   color: ${(props) => props.theme.text};
 
   min-height: 100vh;
@@ -108,7 +108,7 @@ const Item = styled(motion.div)`
   display: inline-block;
   width: 20rem;
   /* background-color: black; */
-  margin-right: 6rem;
+  margin-right: 2rem;
   img {
     width: 100%;
     height: auto;
@@ -116,13 +116,25 @@ const Item = styled(motion.div)`
   }
 
   h1 {
-    font-weight: 500;
+  font-weight: 500;
     text-align: center;
     cursor: pointer;
+    height: 4rem; /* Altura fixa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    line-height: 1.2;
   }
+    
 
   @media (max-width: 48em) {
     width: 15rem;
+        h1 {
+      height: 3rem;
+      font-size: ${(props) => props.theme.fontmd};
+    }
+
   }
 `;
 //data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal"
@@ -197,33 +209,22 @@ const Shop = () => {
   return (
     <Section ref={ref} id="shop">
       <Title data-scroll data-scroll-speed="-1">
-        New Collection
+        Serviços
       </Title>
       <Left>
-        <p>
-          The brand new collection is currently being developed in USA. We
-          create our products using best quality material, including the use of
-          some of the pure fabrics to make our products. All products are made
-          using the best materials, from the finest cotton to the finest
-          fabrics.
-          <br /> <br />
-          We have lots of different clothing options like shoes, jackets and
-          dresses. Not only clothes but we also provide unique Jewellery as
-          well. It is great for us to carry our new clothes all around the
-          country and look different.
-        </p>
+        <p> Tu sonhas, nós realizamos. Conectamos visões ousadas a resultados reais, transformando ideias em marcas icônicas, eventos memoráveis e estratégias que conquistam o mercado angolano. <br /><br />Do planeamento estratégico ao branding, estudos de mercado, gestão de eventos e presença digital, cuidamos de cada detalhe. O nosso foco é simples: fazer a tua marca destacar-se, crescer com autenticidade e conquistar resultados sólidos no mercado. </p>
       </Left>
       <Right data-scroll ref={Horizontalref}>
-        <Product img={img3} title="Sweatshirts" />
-        <Product img={img4} title="Ethnic Wear" />
-        <Product img={img1} title="Man Basics" />
-        <Product img={img2} title="Tops" />
-        <Product img={img5} title="Blazers" />
-        <Product img={img6} title="Suits" />
-        <Product img={img7} title="Antiques" />
-        <Product img={img8} title="Jewellery" />
-        <Product img={img9} title="Watches" />
-        <Product img={img10} title="Special Edition" />
+        <Product img={img1} title="Consultoria de Marketing" />
+        <Product img={img2} title="Gestão de Eventos" />
+        <Product img={img3} title="Onboarding para o Mercado Angolano" />
+        <Product img={img4} title="Outsourcing de Marketing" />
+        <Product img={img5} title="Estratégia e Comunicação Corporativa" />
+        <Product img={img6} title="Branding e Identidade Visual" />
+        <Product img={img7} title="Estudos de Mercado e Concorrência" />
+        <Product img={img8} title="Gestão de Redes Sociais e Website" />
+        <Product img={img9} title="Produção de Vídeo Institucional" />
+        <Product img={img10} title="Tradução, Interpretação e Representação de Marcas" />
       </Right>
     </Section>
   );

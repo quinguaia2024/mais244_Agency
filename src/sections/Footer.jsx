@@ -3,7 +3,7 @@ import React from "react";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
 import styled from "styled-components";
 
-import Logo from "../assets/Svgs/star_white_48dp.svg";
+import Logo from "../assets/Svgs/logo.webp";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -17,7 +17,7 @@ const Section = styled.section`
   overflow-x: hidden;
 
 
-  background-color: ${(props) => props.theme.body};
+  background-color: #025E73;
   color: ${(props) => props.theme.text};
 
   position: relative;
@@ -48,7 +48,7 @@ const FooterComponent = styled(motion.footer)`
   width: 80vw;
 
   @media (max-width: 48em) {
-    width: 90vw;
+    width: 100vw;
   }
   ul {
     list-style: none;
@@ -135,7 +135,7 @@ const Footer = () => {
           data-scroll-speed="2"
         />
         <h3 data-scroll data-scroll-speed="-1">
-          Wibe Studio
+          Consultoria & Marketing
         </h3>
       </LogoContainer>
       <FooterComponent
@@ -148,25 +148,20 @@ const Footer = () => {
       >
         <ul>
           <li aria-hidden="true" onClick={() => handleScroll("#home")}>
-            home
+            Home
           </li>
           <li aria-hidden="true" onClick={() => handleScroll(".about")}>
-            about
+            Sobre
           </li>
           <li aria-hidden="true" onClick={() => handleScroll("#shop")}>
-            shop
+            Serviços
           </li>
           <li aria-hidden="true" onClick={() => handleScroll(".new-arrival")}>
-            new arrival
+              Portofólio
           </li>
           <li>
-            <a href="https://google.com" target={"_blank"} rel="noreferrer">
-              look book
-            </a>
-          </li>
-          <li>
-            <a href="https://google.com" target={"_blank"} rel="noreferrer">
-              reviews
+            <a href="#" target={"_blank"} rel="noreferrer">
+                Contactos
             </a>
           </li>
         </ul>
@@ -176,20 +171,20 @@ const Footer = () => {
             data-scroll-speed="2"
             data-scroll-direction="horizontal"
           >
-            &copy; 2022. All Rights Reserved.
+            &copy; 2025. Todos os direitos reservados
           </span>
           <span
             data-scroll
             data-scroll-speed="-2"
             data-scroll-direction="horizontal"
           >
-            Made with &hearts; by{" "}
+            Feitos  &hearts;por{" "}
             <a
-              href="http://devdreaming.com"
+              href="#"
               target={"_blank"}
               rel="dofollow noreferrer"
             >
-              CodeBucks
+             Evision Holding
             </a>
           </span>
         </Bottom>

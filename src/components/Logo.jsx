@@ -73,32 +73,30 @@ const textVariants = {
 
 const Logo = () => {
   return (
-    <Container>
-      <Link to="/">
-        {/* <img src={star} alt="Wibe Fashion" /> */}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          enableBackground="new 0 0 24 24"
-          height="48px"
-          viewBox="0 0 24 24"
-          width="48px"
-          fill="none"
-        >
-          <g>
-            <motion.path
-              variants={pathVariants}
-              initial="hidden"
-              animate="visible"
-              d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
-            />
-          </g>
-        </svg>
+   <Container>
+  <Link to="/">
+    <motion.div
+      variants={pathVariants}
+      initial="hidden"
+      animate="visible"
+      style={{ display: "inline-block" }}
+    >
+      <img 
+        src="/logo.webp" 
+        alt="Wibe Fashion" 
+        style={{ 
+          height: "48px", 
+          width: "80px", 
+          margin:"10px",
+        }}
+      />
+    </motion.div>
 
-        <Text variants={textVariants} initial="hidden" animate="visible">
-          Wibe Studio
-        </Text>
-      </Link>
-    </Container>
+    <Text variants={textVariants} initial="hidden" animate="visible">
+       Consultoria & Marketing
+    </Text>
+  </Link>
+</Container>
   );
 };
 

@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 import img1 from "../assets/Images/1.webp";
-import img2 from "../assets/Images/2.webp";
-import img3 from "../assets/Images/3.webp";
+import img2 from "../assets/Images/3.png";
+import img3 from "../assets/Images/2.png";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -141,23 +141,19 @@ const About = () => {
         data-scroll-speed="-2"
         data-scroll-direction="horizontal"
       >
-        About Us
+        Sobre Nós
       </Title>
       <Left data-scroll data-scroll-sticky data-scroll-target="#fixed-target">
-        We&apos;re fashion studio based in california. We create unique designs
-        that will blow your mind. We also design unique jewellary pieces.
-        Fashion is an ART that can not be grasped by everyone.
+        Somos +244: criatividade, inovação e boas vibes!
+          Acreditamos que marcas com personalidade vendem mais. Fugimos do <i>marketingês</i> e criamos soluções que funcionam. <i>Energia + know-how</i> para levar tua empresa ao próximo nível.
         <br />
         <br />
-        We are very dedicated to making our products. We offer unique and
-        creative products to a wide range of people. We have a variety of
-        styles, but for most people, all of the options are in the box. We
-        specialize in making things that make you happy.
+        Ligamos marcas e pessoas de forma autêntica e ajudamos empresas a conquistar o mercado angolano.
+        <i>Missão: simplificar.</i> |<i> Visão: inspirar.</i> | <i>Valores: criatividade, transparência, excelência.</i>
         <br />
         <br />
-        We strive to build on our vision. As a fashion label, we do our best to
-        create amazing experiences for all people. We are always looking to make
-        something that is easy for everyone.
+        Tudo o que a tua marca precisa, nós entregamos.
+         Somos o parceiro criativo que dá vida à tua ambição e leva o teu negócio a outro nível.
       </Left>
 
       <Right>
