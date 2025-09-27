@@ -53,7 +53,7 @@ const Title = styled.h1`
 `;
 
 const Left = styled.div`
-  width: 35%;
+  width: 45%;
   background-color: #025E73;
   color: ${(props) => props.theme.text};
 
@@ -80,7 +80,7 @@ const Left = styled.div`
   }
 
   @media (max-width: 48em) {
-    width: 40%;
+    width: 50%;
     p {
       font-size: ${(props) => props.theme.fontsm};
     }
@@ -94,7 +94,7 @@ const Left = styled.div`
 const Right = styled.div`
   /* width: 65%; */
   position: absolute;
-  left: 35%;
+  left: 45%;
   padding-left: 30%;
   background-color: ${(props) => props.theme.grey};
   min-height: 100vh;

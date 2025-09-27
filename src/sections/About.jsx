@@ -176,6 +176,7 @@ const About = () => {
           data-scroll
           data-scroll-speed="-2"
         />
+        
       </Right>
     </Section>
   );

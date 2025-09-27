@@ -64,6 +64,7 @@ function App() {
               <NewArrival key="new arrival" />
               <Footer key="Footer" />
             </AnimatePresence>
+            
           </main>
         </LocomotiveScrollProvider>
       </ThemeProvider>
